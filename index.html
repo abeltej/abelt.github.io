@@ -5,55 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meet Abel</title>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 </head>
-<style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
-    
-    .bgimg {
-      background-image: url('./assets/images/undraw_under_construction_46pa.svg');
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      color: grey;
-      font-family: "Courier New", Courier, monospace;
-      font-size: 25px;
-    }
-    
-    .topleft {
-      position: absolute;
-      top: 0;
-      left: 16px;
-    }
-    
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 16px;
-    }
-    
-    .middle {
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    
-    hr {
-      margin: auto;
-      width: 40%;
-    }
-    </style>
 <body>
-    <div class="bgimg">
-        <div class="middle">
-            <h1>COMING SOON:</h1>
-            <p>Abel Tejada's Portfolio</p> 
-        </div>
+      <!-- Hero -->
+  <section class="et-hero-tabs"> 
+    <div class="header-container">   
+      <div class="header">
+          <h1 class="glitched">Abel Tejada</h1>
+      </div>
     </div>
+      <div class="gradient-border" id="box">
+      <!-- <h3>Web Developer Extraordinaire</h3> -->
+    </div>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-work">Work</a>
+        <a class="et-hero-tab" href="#tab-about">About</a>
+        <a class="et-hero-tab" href="#tab-contact">Contact</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
+    </section>
+  
+    <!-- Main -->
+    <main class="et-main">
+      <section class="et-slide" id="tab-work">
+          <div class="flexbox-work">             
+            <div class="item">
+              <a href="https://find-a-market.herokuapp.com/">
+              <img src="./assets/images/farmers-market.png"/>
+              <p class="title">Farmers Market Finder</p>
+              <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque, quo in eius ducimus labore ex rem ea molestias maxime officia doloremque itaque quia dicta repudiandae. Itaque harum suscipit consequuntur.
+              </p>
+              </a>
+            </div>
+            <!-- http://abel.codes/giftastic/ -->
+
+            <div class="item">
+              <a href="https://exhibitwholesale.com/">
+              <img src="./assets/images/zoom-Exhibit-Wholesale copy.png"/>
+              <p class="title">Exhibit Wholesale</p>
+              <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque, quo in eius ducimus labore ex rem ea molestias maxime officia doloremque itaque quia dicta repudiandae. Itaque harum suscipit consequuntur.
+                </p>
+              </a>
+            </div>
+              <div class="item">
+                <a href="https://altagraciaapparel.com/">
+                <img src="./assets/images/alta-alt.png"/>
+                <p class="title">Alta Gracia</p>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque, quo in eius ducimus labore ex rem ea molestias maxime officia doloremque itaque quia dicta repudiandae. Itaque harum suscipit consequuntur.
+                  </p>
+              </a>
+              </div>
+              <div class="item">
+                <a href="https://abel.codes/project-one/">
+                <img src="./assets/images/justint.png"/>
+                <p class="title">ADA JAMZ</p>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque, quo in eius ducimus labore ex rem ea molestias maxime officia doloremque itaque quia dicta repudiandae. Itaque harum suscipit consequuntur.
+                  </p>
+              </a>
+              </div>             
+              <div class="item">
+                  <a href="http://abel.codes/triviagame/">
+                <img src="./assets/images/harrypottertrivia.png"/>
+                <p class="title">Harry Potter Trivia</p>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque, quo in eius ducimus labore ex rem ea molestias maxime officia doloremque itaque quia dicta repudiandae. Itaque harum suscipit consequuntur.
+                  </p>
+              </a>            
+              </div>
+              <div class="item">
+                  <a href="https://womensinternationalsoccershop.com/">
+                <img src="./assets/images/WISSpage.png"/>
+                <p class="title">WISS</p>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eaque, quo in eius ducimus labore ex rem ea molestias maxime officia doloremque itaque quia dicta repudiandae. Itaque harum suscipit consequuntur.
+                  </p>
+              </a>
+              </div>
+            </div>
+      </section>
+      <section class="et-slide" id="tab-about">
+        <div class="flexbox-about">       
+          <div class="about--text flex-item ">
+              <h1 class="about-h1">About</h1>
+              <p class="about-text--style">Hello! My name is Abel and I am a web developer currently living in Chandler, AZ.
+                <br><br>
+                I have two dogs: a Shiba Inu and a Goldendoodle who both love to go hiking and staying close to nature with us. In my free time, I love to read, watch Anime and try great food from all different cultures. 
+                <br><br>
+                I am a problem solver, which lead me to code. Being able to work through a project and find the best solution possible drives my spirit and passion to make the switch and change careers into the tech industry.</p>
+          </div>
+          <div class="about--container">
+            <div class="image-container flex-item ">
+                <img class="profile-pic" src="./assets/images/pic3.jpeg"/>
+            </div>         
+            <div class="about--fun-text flex-item ">
+              Favorites: 
+              <!-- <div></div> -->
+              
+              <div></div>
+                <div id=flip>
+                  <div><div>Reading</div></div>
+                  <div><div>Hiking</div></div>
+                  <div><div>Eating</div></div>
+                </div>
+            </div>        
+        </div>
+      </div>
+      </section>
+      <section class="et-slide" id="tab-contact">
+        <section id="hire">
+            <h1 id="hire-h1">Get In Touch</h1>          
+            <form id="contact-form">
+                <div class="field name-box">
+                    <input type="text" id="name" placeholder="Darth Vader"/>
+                    <label for="name">Name</label>
+                </div>    
+                <div class="field email-box">
+                    <input type="text" id="email" placeholder="vader@deathstar.com"/>
+                    <label for="email">Email</label>
+                </div>       
+                <div class="field msg-box">
+                    <textarea id="msg" rows="4" placeholder="I.. AM.. Your Father!"/></textarea>
+                    <label for="msg">Msg</label>
+                </div>
+                <button id="example-one" data-text-swap="Sent!" data-text-original="Submit" type='submit'>Submit</button>
+          </form>
+        </section>
+      </section>
+    </main>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
 </html>
