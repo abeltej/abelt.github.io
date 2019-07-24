@@ -46,3 +46,108 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
+
+
+
+  .flexbox-work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 100vw; */
+    height: 100%;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    /* background-image: url("../images/footer_lodyas.png"); */
+    position: absolute;
+    top: 0px;
+    /* width: -webkit-fill-available; */
+    width: 95%;
+    max-width: 1088px;
+  }
+
+  @media only screen and (min-width: 1088px) {
+    .flexbox-work {
+      /* position: unset; */
+    }
+  }
+
+  .flexbox-work a,
+  .flexbox-work a:visited {
+    color: #fff;
+    text-decoration: none;
+    }
+    .flexbox-work p {
+    margin: 0;
+    }
+
+  .flexbox-work:hover img {
+    opacity: 0.28;
+  }
+  .flexbox-work .item {
+    position: relative;
+    width: 30.33%;
+    opacity: 1;
+    /* margin: 1%; */
+    margin: 0 1%;
+    object-fit: contain;
+    height: auto;
+  }
+  .flexbox-work .item img {
+    width: 100%;
+    display: block;
+    transition: all .8s;
+    opacity: 1;
+    object-fit: contain;
+    height: auto;
+  }
+  .flexbox-work .item .title {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    /* padding: 0 3%; */
+    font-size: 30px;
+    /* text-shadow: 0 0 8px #041217; */
+  }
+
+  .flexbox-work .item .sub-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: transparent;
+  /* padding: 0 3%; */
+  font-size: 14px;
+  }
+
+
+  .flexbox-work .item:hover img {
+    opacity: .3;
+  }
+
+  .flexbox-work .item:hover .title {
+    opacity: 1;
+    color: white;
+    /* font-weight: bold; */
+  }
+  
+  @media (max-width: 860px) {
+    .flexbox-work {
+      height: 220vw;
+    }
+    .flexbox-work .item {
+      width: 48%;
+    }
+  }
+  /* @media (max-width: 667px) {
+    .flexbox-work {
+      height: auto;
+    }
+    .flexbox-work .item {
+      width: 100%;
+    }
+  } */
