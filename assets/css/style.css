@@ -90,12 +90,8 @@ body {
       font-size: 1rem;
     }
   }
-  
-  
   /* 
-  
   gallery / work css
-  
   */
   
   #tab-work{
@@ -104,29 +100,31 @@ body {
     /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: repeat(2, 100px); */
     grid-gap: 5px;
-    height: 100%;
     grid-template-columns: repeat(3, auto);
     /* grid-auto-rows: minmax(2, auto); */
   }
 
-  /* #tab-work > div > img {  
-    width: 100%;  
-    height: 100%;  
-    object-fit: cover;  
-} */
-
-  @media (max-width: 850px) {
+  @media (max-width: 1100px) {
     #tab-work {
       grid-template-columns: repeat(2, auto);
+       height: 100%;
+      /* height: 135vh; */
+    }
+  }
+
+  @media (max-width: 750px) {
+    #tab-work {
+      grid-template-columns: repeat(1, auto);
+      height: 100%;
       /* height: 135vh; */
     }
   }
 
   #tab-work img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  /* max-width: 100%; */
-}
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    /* max-width: 100%; */
+  }
 
   .grid-gallery {
     position: relative;
@@ -143,13 +141,6 @@ body {
     height: 100%;
     object-fit: cover;  
   }
-  /* .gallery-img:hover {
-    opacity: .3;
-  } */
-/* 
-.gallery-img:hover .text-container {
-  color: white;
-} */
 
 .grid-gallery:hover .text-container {
   visibility: visible;
@@ -184,31 +175,7 @@ body {
 .sub-title {
   padding: 10px;
   margin: 5px;
-}
-
-.farmers-market-finder {
-  /* background-image: url(../images/farmers-market.png); */
-  }
-
-.exhibit-wholesale {
-  /* background-image: url(../images/zoom-exhibit-Wholesale.png); */
-}
-.alta-gracia {
- /* background-image: url(../images/alta-alt.png); */
-}
-.ada-jams {
- 
-    /* background-image: url(../images/justint.png); */
-}
-.harry-potter-trivia {
-   
-    /* background-image: url(../images/harrypottertrivia.png); */
-}
-.wiss-page {
-    
-    /* background-image: url(../images/WISSpage.png); */
-}
-  
+}  
   /* CSS FOR HEADER HERO */
 
   .header {
@@ -317,7 +284,6 @@ body {
   animation: animatedgradient 13s ease alternate infinite;
   background-size: 300% 300%;
 }
-
 
 @keyframes animatedgradient {
 	0% {
