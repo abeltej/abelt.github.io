@@ -97,18 +97,15 @@ body {
   #tab-work{
     background-image: url("../images/footer_lodyas.png");
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 100px); */
     grid-gap: 5px;
+    height: 90vh;
     grid-template-columns: repeat(3, auto);
-    /* grid-auto-rows: minmax(2, auto); */
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1150px) {
     #tab-work {
       grid-template-columns: repeat(2, auto);
        height: 100%;
-      /* height: 135vh; */
     }
   }
 
@@ -116,7 +113,6 @@ body {
     #tab-work {
       grid-template-columns: repeat(1, auto);
       height: 100%;
-      /* height: 135vh; */
     }
   }
 
@@ -298,7 +294,12 @@ body {
 }
 /* 
 about me css section */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+#tab-about {
+  height: auto;
+}
 
 .flexbox-about{
   display: flex;
@@ -306,16 +307,84 @@ about me css section */
   flex-direction: row;      
   justify-content: center;  
   align-items: center;  
+  margin: 50px auto 25px auto;
+}
+
+@media (max-width: 750px) {
+  .flexbox-about {
+    flex-direction: column;    
+    overflow: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  body .flexbox-about > .flex-item {
+    height: unset;
+    flex: 0 0 33%;
+    margin-top: unset;
+    width: 100%;
+    overflow: auto;
+  }
+} 
+
+@media (max-width: 750px) {
+  body .about--container {
+    min-height: 0;
+    flex-direction: row;
+    max-width: 440px;
+  }
+} 
+
+@media (max-width: 450px) {
+  body .about--container {
+    flex-direction: column;
+  }
+} 
+
+@media (max-width: 750px) {
+  body .about--container > .flex-item {
+    height: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile-pic {
+    max-width: 60% !important;
+    margin: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  body .about--fun-text {
+    /* font-size: 27px; */
+    margin: unset;  
+    /* margin: 20px; */
+    padding: 5px;
+    margin: 25% auto;
+    /* flex-grow: 1; */
+    /* flex-basis: 0; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  body .image-container {
+    margin: unset;    
+    padding: 5px;
+
+    /* flex-grow: 1;
+    flex-basis: 0; */
+  }
 }
 
 .flexbox-about > .flex-item {
-  height: 90%;
-  flex: 0 0 33%;         
-  margin-top: 50px;
-  flex: 0 0 50%;
+  margin: 25px;
+  /* flex: 0 0 50%; */
 }
+
 .about--container{
-  height: 90%;
   flex: 0 0 33%;
   display: flex;               
   flex-direction: column;         
@@ -376,7 +445,6 @@ about me css section */
   font-weight:bold;
   margin:0px;
   text-align:center;
-  margin: 25px;
 }
 
 .about--fun-text > .flex-item {
